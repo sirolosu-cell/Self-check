@@ -7,7 +7,7 @@
     "loadErrorText": "flow-data.json を同じフォルダに置き、GitHub Pages などのWeb環境で開いてください。"
   },
   "reservation": {
-    "comment": "ここに公式LINEのURLを入れる",
+    "comment": "ここに公式LINEのURLを入れる（https://lin.ee/〜 の形）",
     "lineUrl": "https://lin.ee/replace-with-official-line",
     "buttonText": "初回予約に進む",
     "openInNewTab": true
@@ -21,17 +21,17 @@
       "flow": "diagnosis",
       "intro": {
         "eyebrow": "Instagramから来てくださった方へ",
-        "headline": "今の不調タイプと、改善の見通しを確認できます",
-        "lead": "来院前に8つの質問へ答えるだけで、体の状態タイプと段階的なケアの目安を確認できます。",
-        "note": "所要時間の目安：約1分"
+        "headline": "30秒のセルフチェックで、あなたの不調のタイプがわかります",
+        "lead": "「何回くらい通えば良くなるの？」その不安を、来院前に解消します。",
+        "note": "所要時間の目安：約30秒"
       }
     },
     "hp": {
       "flow": "diagnosis",
       "intro": {
         "eyebrow": "ホームページをご覧の方へ",
-        "headline": "来院前に、今の状態を整理してみましょう",
-        "lead": "症状の続き方や生活への影響から、あなたの状態タイプと施術の見通しをわかりやすく表示します。",
+        "headline": "あなたの状態タイプと、改善の目安をチェック",
+        "lead": "症状の特徴から、改善ステップと通院の目安をご案内します。",
         "note": "全8問のセルフチェックです"
       }
     },
@@ -39,14 +39,14 @@
       "flow": "simple",
       "intro": {
         "eyebrow": "ご紹介で来てくださった方へ",
-        "headline": "まずは簡単に、来院のきっかけを確認します",
-        "lead": "詳しい状態確認は初回検査で行います。ここでは来院前に相談内容を整理し、公式LINE予約へ進めます。",
+        "headline": "ご紹介ありがとうございます。まず簡単なチェックから",
+        "lead": "ご来院前に、お悩みを少しだけ教えてください。当日がスムーズになります。",
         "note": "全3問の簡易チェックです"
       }
     }
   },
   "uiText": {
-    "startDiagnosis": "セルフチェックを始める",
+    "startDiagnosis": "チェックを始める",
     "startSimple": "簡単チェックを始める",
     "questionPrefix": "QUESTION",
     "stepPrefix": "STEP",
@@ -55,35 +55,35 @@
     "showResult": "結果を見る",
     "completeSimple": "予約案内を見る",
     "selectPrompt": "あてはまるものを選んでください",
-    "multiSelectNote": "あてはまるものをすべて選べます",
+    "multiSelectNote": "あてはまるものをすべて選んでください",
     "restart": "もう一度チェックする",
     "resultLabel": "あなたの状態タイプ",
-    "whyTitle": "なぜこの状態か",
-    "careTitle": "なぜ段階的ケアが有効か",
+    "whyTitle": "なぜこの状態なのか",
+    "careTitle": "なぜ段階的なケアが有効か",
     "roadmapTitle": "改善ロードマップ",
     "rangeTitle": "通院回数の目安",
-    "menuTitle": "向いている施術",
+    "menuTitle": "あなたに向いている施術",
     "ticketTitle": "回数券のご案内",
     "ticketBaseLabel": "価格計算の基準",
-    "ticketRangeBadge": "目安レンジ内",
-    "ticketNotice": "回数券は目安レンジに合うものを表示しています。特定の回数券を断定するものではありません。最終的なプランは初回検査後に院長が対面でご提案します。",
+    "ticketRangeBadge": "目安に合致",
+    "ticketNotice": "目安に合致する回数券を強調しています。特定の回数券を断定するものではありません。最終的なプランは初回検査後に院長が対面でご提案します。",
     "regularPrice": "通常",
     "firstVisitPrice": "初回料金",
-    "firstVisitBadgePrefix": "初回限定",
+    "firstVisitBadgePrefix": "初回限定 ",
     "offSuffix": "%OFF",
     "taxIncluded": "税込",
     "sessionsSuffix": "回券",
     "discountLabel": "割引",
     "simpleResultLabel": "来院前メモ",
-    "simpleNextTitle": "初回で詳しく確認します",
-    "simpleNextText": "この簡易チェックでは重い診断は行いません。初回施術時に院長が状態を確認し、必要な施術内容や今後の進め方をご提案します。",
+    "simpleNextTitle": "あなたのお悩み、初回でしっかり確認します",
+    "simpleNextText": "この簡易チェックでは詳しい診断は行いません。初回施術時に院長が状態を確認し、改善の見通しや今後の進め方をご提案します。回数券のご案内も、施術を体験いただいたうえでご希望があればという形です。無理な勧誘はいたしません。",
     "simplePlanTitle": "ご予約後の流れ",
     "simplePlanText": "詳しい状態確認と今後の進め方は、初回施術後に院長がご提案します。",
     "selectedAnswersTitle": "今回の相談内容"
   },
-  "disclaimer": "このセルフチェックは医学的診断ではありません。表示される通院回数はあくまで一般的な目安です。実際の状態確認と最終的な施術プランは、初回検査・問診のうえで院長がご提案します。",
+  "disclaimer": "このセルフチェックは医学的診断ではありません。表示される通院回数はあくまで一般的な目安で、実際のプランは初回の検査・問診のうえで院長がご提案します。",
   "pricing": {
-    "initialDiscountPct": 20,
+    "initialDiscountPct": 50,
     "tickets": [
       { "sessions": 3, "discountPct": 0 },
       { "sessions": 5, "discountPct": 5 },
@@ -97,211 +97,212 @@
       "id": "myofascial",
       "name": "筋膜マニピュレーション",
       "price": 13000,
-      "description": "筋肉を包む筋膜に手技でアプローチする施術です。硬さや張りのある部位を確認しながら、動きの引っかかりや負担のかかり方を整えます。"
+      "description": "筋肉を包む「筋膜」に手技でアプローチする施術です。硬くなった筋膜を触診で確認しながらほぐし、動きの引っかかりや張りにはたらきかけます。痛みの部位と原因の部位が離れているケースにも用います。"
     },
     {
       "id": "bodyBalance",
       "name": "全身整体",
       "price": 8800,
-      "description": "姿勢や全身のつながりを見ながら、負担の偏りに手技でアプローチする基本施術です。まず全体を整えたい方に向いています。"
+      "description": "身体全体のバランスを手技で整える基本の施術です。一部分だけでなく姿勢や全身のつながりを見ながら、負担のかかり方にアプローチします。まず全体を整えたい方に向いています。"
     },
     {
       "id": "oxygenMyofascial",
-      "name": "酸素カプセル併用 筋膜マニピュレーション",
+      "name": "酸素カプセル併用／筋膜マニピュレーション",
       "price": 14980,
-      "description": "筋膜マニピュレーションに酸素カプセルを組み合わせるコースです。施術とあわせてコンディションを整える目的で利用します。"
+      "description": "筋膜マニピュレーションに、酸素カプセルを組み合わせたコースです。酸素カプセルは、通常より酸素濃度と気圧を高めた空間で一定時間過ごすもので、施術と合わせてコンディショニングを目的に利用します。"
     },
     {
       "id": "oxygenBalance",
-      "name": "酸素カプセル併用 全身整体",
+      "name": "酸素カプセル併用／全身整体",
       "price": 12980,
-      "description": "全身整体に酸素カプセルを組み合わせるコースです。疲労感が強い方や、施術とあわせて体調を整えたい方に向いています。"
+      "description": "全身整体に酸素カプセルを組み合わせたコースです。疲労感が強い方や、施術と合わせて全身のコンディションを整えたい方に向いています。"
     },
     {
       "id": "radioMyofascial",
-      "name": "ラジオ波併用 筋膜マニピュレーション",
+      "name": "ラジオ波併用／筋膜マニピュレーション",
       "price": 13980,
-      "description": "筋膜マニピュレーションにラジオ波を組み合わせるコースです。深部のこわばりや慢性的な張りが気になる場合に用います。"
+      "description": "筋膜マニピュレーションに、ラジオ波を組み合わせたコースです。ラジオ波は高周波の一種で、身体に照射すると内部にあたたかさが生まれます。手技と合わせて深部のケアを行いたい場合に用います。"
     },
     {
       "id": "radioBalance",
-      "name": "ラジオ波併用 全身整体",
+      "name": "ラジオ波併用／全身整体",
       "price": 12980,
-      "description": "全身整体にラジオ波を組み合わせるコースです。手技とあわせて、温かさを使いながら体の状態を整えます。"
+      "description": "全身整体に、深部があたたまるラジオ波を組み合わせたコースです。冷えや慢性的な張りが気になる方に向いています。"
     }
   ],
   "typeOrder": ["acute", "rangeOfMotion", "fatigue", "recurrent", "chronic"],
   "types": {
     "acute": {
       "name": "急性・初発タイプ",
-      "shortText": "固定化する前の、整えやすい段階です。",
-      "description": "急に出た不調や初めての痛みは、体がまだその状態に慣れていないことが多い段階です。早めに状態を確認し、負担をかけている動きや姿勢を整えることで、長引きにくい土台づくりを目指します。",
-      "careReason": "短い期間でも、痛みの軽減、動作確認、再発予防の順に進めると、ぶり返しを防ぎやすくなります。",
-      "roadmap": ["つらさや違和感を軽くする", "動作と姿勢の状態を確認する", "ぶり返しにくい使い方を整える"],
+      "shortText": "固定化する前の、整いやすい状態です",
+      "description": "急に出た不調や、初めての症状は、まだ身体がその状態で固まっていません。組織や動きが柔らかいうちにケアできる、比較的整いやすい段階です。",
+      "careReason": "多くは早めに楽になりますが、放置すると『繰り返すクセ』がつき始めます。良い状態が定着したかの確認まで含めると、短期間でも痛みの軽減→動作の確認の順で進めることで、ぶり返しを防ぎやすくなります。",
+      "roadmap": ["痛み・違和感の軽減", "動作チェックと再発予防の確認"],
       "range": { "min": 1, "max": 3 },
-      "rangeText": "まずは1〜3回ほどで状態の変化を見ながら、必要なケアを判断する段階です。",
+      "rangeText": "このタイプは1〜3回ほどで落ち着く方が多い段階です。少ない回数で済む可能性が高いので、まず初回で状態を確認させてください。",
       "recommendedMenuIds": ["bodyBalance", "myofascial"]
     },
     "rangeOfMotion": {
       "name": "可動域制限タイプ",
-      "shortText": "動かせる範囲が狭くなり、負担が偏りやすい状態です。",
-      "description": "関節や筋肉の動かせる範囲が狭くなり、特定の動きで張りや痛みが出やすい状態です。同じ姿勢や偏った体の使い方が続くことで起こりやすくなります。",
-      "careReason": "動きを取り戻すには、こわばりをゆるめるだけでなく、その動きで日常生活を送れるように定着させることが大切です。",
-      "roadmap": ["張りや痛みを軽くする", "可動域を確認しながら整える", "動きの定着を目指す"],
+      "shortText": "動かせる範囲が狭くなっている状態です",
+      "description": "関節や筋肉の動かせる範囲が狭まり、特定の動きで張りや痛みが出やすい状態です。長く同じ姿勢や負担が続いた結果として起こりやすくなります。",
+      "careReason": "動きの制限は一度広げても身体が元の使い方に戻ろうとするため、すぐ戻りがちです。広げた可動域を定着させるには、動きを取り戻す→その動きで生活する、を繰り返すことが大切で、数回の積み重ねが要ります。",
+      "roadmap": ["痛み・張りの軽減", "可動域の改善", "動きの定着"],
       "range": { "min": 3, "max": 5 },
-      "rangeText": "3〜5回ほどかけて、動きの確認と定着を見ていく方が多い段階です。",
+      "rangeText": "3〜5回ほどかけて動きを取り戻し定着させる方が安定しやすい傾向です。正確な回数は初回の動作チェックでご提案します。",
       "recommendedMenuIds": ["myofascial", "radioMyofascial"]
     },
     "fatigue": {
       "name": "疲労蓄積タイプ",
-      "shortText": "回復しきれない疲労が、体の不調として出やすい状態です。",
-      "description": "睡眠や仕事、生活習慣の負担が積み重なり、体が自分で回復する余力を保ちにくくなっている可能性があります。痛みだけでなく、重だるさや抜けにくい疲れを伴いやすいタイプです。",
-      "careReason": "一度で整えるよりも、つらさを軽くしながら回復しやすい体の状態を段階的に作ることが有効です。",
-      "roadmap": ["重さやだるさを軽くする", "回復しやすい状態を整える", "疲れをためにくい状態を維持する"],
+      "shortText": "回復力が追いつかなくなっている状態です",
+      "description": "慢性的な疲労やだるさが背景にあり、身体が自分で回復する力が落ちているところに不調が重なっている状態です。睡眠・仕事・生活の負担の蓄積で起こりやすくなります。",
+      "careReason": "その場で軽くなっても土台の疲労が残ると戻りやすいのが特徴です。今のつらさを軽くする→回復力の土台を上げる→疲れにくい状態を保つ、という流れで、疲労のベースを下げながら整えるため、ある程度の継続が有効です。",
+      "roadmap": ["つらさ・重さの軽減", "回復力の底上げ", "疲れにくい状態の維持"],
       "range": { "min": 5, "max": 7 },
-      "rangeText": "5〜7回ほどで、疲労の蓄積と体の使い方をあわせて見ていく目安です。",
+      "rangeText": "5〜7回ほどかけて疲労の土台を下げる方が戻りにくい傾向です。酸素カプセル併用が向く場合もあり、初回でご相談できます。",
       "recommendedMenuIds": ["oxygenBalance", "oxygenMyofascial"]
     },
     "recurrent": {
       "name": "再発反復タイプ",
-      "shortText": "同じ不調を繰り返し、原因となる使い方が残りやすい状態です。",
-      "description": "同じ場所の不調を何度も繰り返している場合、痛みそのものだけでなく、負担を生む姿勢や動作パターンが残っていることがあります。",
-      "careReason": "その場のつらさを軽くするだけでは繰り返しやすいため、原因となる動きや負担の偏りを段階的に整えることが大切です。",
-      "roadmap": ["今のつらさを軽くする", "繰り返しの原因となる動きを確認する", "再発しにくい状態づくりを進める"],
+      "shortText": "同じ不調を繰り返してしまう状態です",
+      "description": "同じ場所の不調を何度も繰り返している状態です。痛みそのものより、それを生む『身体の使い方や負担のパターン』が残っていることが背景にあります。",
+      "careReason": "その場の対処だけでは原因のパターンが残るため繰り返します。まず痛みを抑える→原因の動きを修正→繰り返さない状態を作る、と進め、負担のかかり方そのものを変えるにはある程度の回数が必要です。",
+      "roadmap": ["痛みの軽減", "原因となる動き・負担の修正", "再発しない状態づくり"],
       "range": { "min": 7, "max": 10 },
-      "rangeText": "7〜10回ほどかけて、繰り返しの原因にアプローチする目安です。",
+      "rangeText": "7〜10回ほどかけて繰り返しの原因にアプローチする方が安定しやすい傾向です。実際の回数は初回検査でご提案します。",
       "recommendedMenuIds": ["myofascial", "radioMyofascial"]
     },
     "chronic": {
       "name": "慢性固定化タイプ",
-      "shortText": "長く続いた不調が、体の通常状態として残りやすい段階です。",
-      "description": "不調が長期間続くと、体がその状態を普通の状態として覚えてしまい、複数の要因が重なりやすくなります。時間をかけて作られた状態のため、段階的なケアが必要になりやすいタイプです。",
-      "careReason": "一度の施術で判断するのではなく、つらさを軽くする、固定化した部分を整える、良い状態を維持するという流れで進めることが大切です。",
-      "roadmap": ["強いつらさや違和感を軽くする", "固定化した部分を整える", "良い状態を維持するためのケアを続ける"],
+      "shortText": "身体がその状態で固まってしまっている状態です",
+      "description": "不調が長期間続き、身体がその状態を『普通』として固定化してしまっている状態です。長い時間をかけて作られたため、原因も一つではないことが多いです。",
+      "careReason": "長期間かけて固定化したものは一度のケアでは元に戻ろうとします。痛みを下げる→固定化した部分をほぐす→良い状態を維持する、と段階的にほぐし新しい状態に置き換えるには時間がかかります。",
+      "roadmap": ["強い痛み・つらさの軽減", "固定化した部分の改善", "良い状態の維持・メンテナンス"],
       "range": { "min": 10, "max": 20 },
-      "rangeText": "10〜20回ほどの計画的なケアを見込む方が多い段階です。",
+      "rangeText": "10〜20回ほどの計画的なケアと定期メンテで安定していく方が多い段階です。負担の少ない進め方を初回でご相談しましょう。",
       "recommendedMenuIds": ["myofascial", "oxygenMyofascial", "radioMyofascial"]
     }
   },
   "diagnosisQuestions": [
     {
       "id": "area",
-      "text": "気になる不調の場所はどこですか？",
+      "text": "いちばん気になる不調の場所は？（複数選択可）",
       "type": "multi",
       "options": [
         { "id": "lowBack", "label": "腰", "scores": {} },
         { "id": "neckShoulder", "label": "首・肩", "scores": {} },
         { "id": "back", "label": "背中", "scores": {} },
-        { "id": "legKnee", "label": "股関節・膝・脚", "scores": { "rangeOfMotion": 1 } },
-        { "id": "headFatigue", "label": "頭の重さ・全身のだるさ", "scores": { "fatigue": 1 } }
+        { "id": "legKnee", "label": "膝・脚", "scores": { "rangeOfMotion": 1 } },
+        { "id": "headFatigue", "label": "頭痛・だるさ・自律神経系", "scores": { "fatigue": 1 } }
       ]
     },
     {
       "id": "duration",
-      "text": "その不調は、いつ頃から続いていますか？",
+      "text": "その不調はいつ頃から続いていますか？",
       "type": "single",
       "options": [
         { "id": "withinWeek", "label": "ここ1週間以内", "scores": { "acute": 3 } },
-        { "id": "withinMonth", "label": "1か月以内", "scores": { "acute": 1, "rangeOfMotion": 1 } },
-        { "id": "oneToThreeMonths", "label": "1〜3か月ほど", "scores": { "fatigue": 1, "recurrent": 1 } },
-        { "id": "overThreeMonths", "label": "3か月以上", "scores": { "chronic": 3 } }
+        { "id": "withinMonth", "label": "1ヶ月以内", "scores": { "acute": 1, "rangeOfMotion": 1 } },
+        { "id": "oneToThreeMonths", "label": "1〜3ヶ月", "scores": { "recurrent": 1, "fatigue": 1 } },
+        { "id": "overThreeMonths", "label": "3ヶ月以上", "scores": { "chronic": 3 } }
       ]
     },
     {
       "id": "recurrence",
-      "text": "同じような不調を繰り返していますか？",
+      "text": "同じ不調を繰り返していますか？",
       "type": "single",
       "options": [
         { "id": "firstTime", "label": "初めて", "scores": { "acute": 2 } },
         { "id": "sometimes", "label": "たまに出る", "scores": { "rangeOfMotion": 1 } },
-        { "id": "repeat", "label": "何度も繰り返している", "scores": { "recurrent": 3 } },
+        { "id": "repeat", "label": "繰り返している", "scores": { "recurrent": 3 } },
         { "id": "always", "label": "慢性的にずっとある", "scores": { "chronic": 2, "recurrent": 1 } }
       ]
     },
     {
       "id": "impact",
-      "text": "日常生活への影響はどれくらいありますか？",
+      "text": "日常生活への支障はどれくらいですか？",
       "type": "single",
       "options": [
-        { "id": "none", "label": "ほとんどない", "scores": { "acute": 1 } },
-        { "id": "little", "label": "少し気になる", "scores": { "rangeOfMotion": 1 } },
-        { "id": "daily", "label": "日常動作で困ることがある", "scores": { "rangeOfMotion": 1, "recurrent": 1 } },
-        { "id": "severe", "label": "仕事や睡眠に影響している", "scores": { "chronic": 2, "fatigue": 1 } }
+        { "id": "none", "label": "ほぼない", "scores": { "acute": 1 } },
+        { "id": "little", "label": "少しある", "scores": { "rangeOfMotion": 1 } },
+        { "id": "daily", "label": "日常動作で困る", "scores": { "rangeOfMotion": 1, "recurrent": 1 } },
+        { "id": "severe", "label": "仕事・睡眠に影響している", "scores": { "chronic": 2, "fatigue": 1 } }
       ]
     },
     {
       "id": "fatigue",
-      "text": "全身の疲労感やだるさはありますか？",
+      "text": "全身の疲労感・だるさはありますか？",
       "type": "single",
       "options": [
-        { "id": "normal", "label": "特にない", "scores": {} },
+        { "id": "normal", "label": "普通", "scores": {} },
         { "id": "some", "label": "やや疲れやすい", "scores": { "fatigue": 1 } },
         { "id": "chronicFatigue", "label": "慢性的に疲れている", "scores": { "fatigue": 3 } },
-        { "id": "alwaysHeavy", "label": "常に重だるく、抜けにくい", "scores": { "fatigue": 3, "chronic": 1 } }
+        { "id": "alwaysHeavy", "label": "常にだるい・抜けない", "scores": { "fatigue": 3, "chronic": 1 } }
       ]
     },
     {
       "id": "movement",
-      "text": "体を動かす習慣はありますか？",
+      "text": "運動・身体を動かす習慣は？",
       "type": "single",
       "options": [
-        { "id": "regular", "label": "定期的にある", "scores": {} },
-        { "id": "sometimes", "label": "たまにある", "scores": { "rangeOfMotion": 1 } },
-        { "id": "none", "label": "ほとんどない", "scores": { "rangeOfMotion": 1, "fatigue": 1 } }
+        { "id": "regular", "label": "定期的にしている", "scores": {} },
+        { "id": "sometimes", "label": "たまにする", "scores": { "rangeOfMotion": 1 } },
+        { "id": "none", "label": "ほとんどしない", "scores": { "rangeOfMotion": 1, "fatigue": 1 } }
       ]
     },
     {
       "id": "careHistory",
-      "text": "これまでに不調へのケアを受けたことはありますか？",
+      "text": "これまでに何かケアをしましたか？",
       "type": "single",
       "options": [
-        { "id": "none", "label": "特にない", "scores": { "acute": 1 } },
-        { "id": "selfCare", "label": "市販薬や湿布などで様子を見ている", "scores": { "recurrent": 1 } },
+        { "id": "none", "label": "特に何もしていない", "scores": { "acute": 1 } },
+        { "id": "selfCare", "label": "市販薬・湿布でしのいでいる", "scores": { "recurrent": 1 } },
         { "id": "visited", "label": "他院に通ったことがある", "scores": { "recurrent": 1, "chronic": 1 } },
-        { "id": "notImproved", "label": "通ったが変化を感じにくかった", "scores": { "chronic": 2 } }
+        { "id": "notImproved", "label": "通ったが改善しなかった", "scores": { "chronic": 2 } }
       ]
     },
     {
       "id": "goal",
-      "text": "今回、特に重視したいことは何ですか？",
+      "text": "いちばん重視したいことは？",
       "type": "single",
       "options": [
-        { "id": "pain", "label": "まず今のつらさを軽くしたい", "scores": { "acute": 1 } },
-        { "id": "root", "label": "根本から状態を見直したい", "scores": { "chronic": 1, "recurrent": 1 } },
-        { "id": "prevent", "label": "繰り返しにくくしたい", "scores": { "recurrent": 2 } },
-        { "id": "move", "label": "動ける範囲を広げたい", "scores": { "rangeOfMotion": 2 } }
+        { "id": "pain", "label": "とにかく今の痛みを取りたい", "scores": { "acute": 1 } },
+        { "id": "root", "label": "根本から良くしたい", "scores": { "chronic": 1, "recurrent": 1 } },
+        { "id": "prevent", "label": "もう繰り返したくない", "scores": { "recurrent": 2 } },
+        { "id": "move", "label": "動けるようにしたい", "scores": { "rangeOfMotion": 2 } }
       ]
     }
   ],
   "simpleQuestions": [
     {
       "id": "visitReason",
-      "text": "今回、来院を考えた一番のきっかけは何ですか？",
+      "text": "今日いちばん気になっていることは？",
       "type": "single",
       "options": [
-        { "id": "pain", "label": "痛みや違和感がある" },
-        { "id": "fatigue", "label": "疲れや重だるさが抜けにくい" },
-        { "id": "introduced", "label": "紹介されて相談してみたい" }
+        { "id": "pain", "label": "痛み・つらさを取りたい" },
+        { "id": "repeat", "label": "繰り返す不調をどうにかしたい" },
+        { "id": "fatigue", "label": "疲れ・だるさが抜けない" },
+        { "id": "move", "label": "身体が動かしにくい" }
       ]
     },
     {
       "id": "timing",
-      "text": "相談したい時期はいつ頃ですか？",
+      "text": "いつ頃からですか？",
       "type": "single",
       "options": [
-        { "id": "soon", "label": "できるだけ早め" },
-        { "id": "week", "label": "今週〜来週あたり" },
-        { "id": "ask", "label": "まずLINEで相談したい" }
+        { "id": "recent", "label": "最近" },
+        { "id": "months", "label": "数ヶ月" },
+        { "id": "long", "label": "ずっと前から" }
       ]
     },
     {
       "id": "concern",
-      "text": "初回で特に確認したいことはありますか？",
+      "text": "来院前に知りたいことは？",
       "type": "single",
       "options": [
-        { "id": "condition", "label": "今の状態を知りたい" },
-        { "id": "menu", "label": "自分に合う施術を知りたい" },
-        { "id": "frequency", "label": "今後の進め方を相談したい" }
+        { "id": "cause", "label": "原因が知りたい" },
+        { "id": "howlong", "label": "どれくらいで良くなるか" },
+        { "id": "fit", "label": "自分に合う施術はどれか" }
       ]
     }
   ]
