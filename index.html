@@ -6,60 +6,53 @@
 <title>来院前セルフチェック</title>
 <style>
   :root {
-    --bg: #f6faf7;
-    --surface: #ffffff;
-    --surface-soft: #eef6f1;
-    --ink: #172521;
-    --muted: #63746f;
-    --line: #d8e5dd;
-    --accent: #226c5d;
-    --accent-deep: #15463d;
-    --warm: #b66b4a;
-    --blue: #426a8f;
-    --shadow: 0 14px 32px rgba(24, 57, 49, .12);
+    --bg: #f5ecd2;
+    --surface: #fffdf5;
+    --surface-soft: #efe7cd;
+    --ink: #34362c;
+    --muted: #6e6c5a;
+    --line: #e4d9bc;
+    --accent: #356b43;
+    --accent-deep: #284f32;
+    --warm: #c2942f;
+    --charcoal: #3a3d33;
+    --shadow: 0 18px 44px -24px rgba(58, 61, 51, .38);
   }
 
-  * {
-    box-sizing: border-box;
-  }
+  * { box-sizing: border-box; }
 
-  html {
-    min-height: 100%;
-    background: var(--bg);
-  }
+  html { min-height: 100%; background: var(--bg); }
 
   body {
     margin: 0;
     color: var(--ink);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-    line-height: 1.7;
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
+    line-height: 1.85;
+    letter-spacing: .01em;
     -webkit-font-smoothing: antialiased;
   }
 
-  button,
-  a {
-    font: inherit;
-  }
+  button, a { font: inherit; }
 
   .shell {
     width: min(100%, 560px);
     margin: 0 auto;
-    padding: 0 18px 72px;
+    padding: 0 20px 88px;
   }
 
   .topbar {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgba(246, 250, 247, .94);
-    backdrop-filter: blur(12px);
+    background: rgba(244, 241, 234, .92);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
   }
 
   .topbar-inner {
     width: min(100%, 560px);
     margin: 0 auto;
-    padding: 13px 18px;
+    padding: 14px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,153 +61,172 @@
 
   .brand {
     font-size: 13px;
-    font-weight: 800;
-    letter-spacing: .08em;
+    font-weight: 600;
+    letter-spacing: .2em;
     color: var(--accent-deep);
   }
 
   .source-label {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--muted);
     white-space: nowrap;
+    letter-spacing: .04em;
   }
 
   .hero {
-    padding: 34px 0 28px;
+    padding: 48px 0 30px;
+    text-align: center;
   }
 
-  .eyebrow,
-  .section-kicker {
-    margin: 0 0 10px;
+  .brand-logo {
+    display: block;
+    margin: 0 auto 22px;
+    width: min(64%, 220px);
+    aspect-ratio: 1 / 0.82;
+    object-fit: cover;
+    object-position: center 41%;
+    border-radius: 18px;
+  }
+
+  .brand-logo.small {
+    width: min(40%, 130px);
+    margin-bottom: 14px;
+  }
+
+  .eyebrow, .section-kicker {
+    margin: 0 0 16px;
     color: var(--warm);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: .06em;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .28em;
   }
 
-  h1,
-  h2,
-  h3,
-  p {
-    margin: 0;
-  }
+  h1, h2, h3, p { margin: 0; }
 
   h1 {
-    font-size: 27px;
-    line-height: 1.35;
-    letter-spacing: 0;
+    font-size: 25px;
+    line-height: 1.6;
+    font-weight: 600;
   }
 
   .lead {
-    margin-top: 16px;
+    margin-top: 18px;
     color: var(--muted);
     font-size: 15px;
   }
 
-  .note {
-    margin-top: 12px;
-    color: var(--blue);
-    font-size: 13px;
-    font-weight: 700;
+  .ornament {
+    width: 40px;
+    height: 1px;
+    background: var(--warm);
+    opacity: .55;
+    margin: 24px auto 0;
   }
 
-  .primary-action,
-  .secondary-action,
-  .option,
-  .nav-button {
-    border-radius: 8px;
-    min-height: 48px;
+  .note {
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: .04em;
+  }
+
+  .primary-action, .secondary-action, .option, .nav-button {
+    border-radius: 999px;
+    min-height: 50px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }
 
   .primary-action {
     width: 100%;
-    margin-top: 26px;
+    margin-top: 28px;
     border: 0;
     background: var(--accent-deep);
     color: #fff;
-    padding: 15px 18px;
-    font-weight: 800;
+    padding: 16px 18px;
+    font-weight: 600;
+    letter-spacing: .1em;
     box-shadow: var(--shadow);
   }
 
   .secondary-action {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 12px;
     border: 1px solid var(--line);
-    background: var(--surface);
+    background: transparent;
     color: var(--muted);
     padding: 13px 18px;
-    font-weight: 700;
   }
 
   .status {
-    padding: 42px 18px;
+    padding: 52px 18px;
     text-align: center;
     color: var(--muted);
   }
 
   .progress {
-    height: 5px;
+    height: 3px;
     background: var(--line);
     border-radius: 999px;
     overflow: hidden;
-    margin: 20px 0 18px;
+    margin: 26px 0 22px;
   }
 
   .progress span {
     display: block;
     height: 100%;
     width: 0;
-    background: linear-gradient(90deg, var(--accent), var(--blue));
-    transition: width .25s ease;
+    background: var(--accent);
+    transition: width .4s ease;
   }
 
   .panel {
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: var(--shadow);
-    padding: 20px;
+    padding: 26px 22px;
   }
 
   .q-count {
     color: var(--warm);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: .08em;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2em;
   }
 
   .q-text {
-    margin-top: 8px;
-    font-size: 20px;
-    line-height: 1.45;
-    font-weight: 800;
+    margin-top: 10px;
+    font-size: 19px;
+    line-height: 1.6;
+    font-weight: 600;
   }
 
   .options {
     display: grid;
-    gap: 10px;
-    margin-top: 18px;
+    gap: 11px;
+    margin-top: 22px;
   }
 
   .option {
     width: 100%;
-    border: 1px solid var(--line);
-    background: var(--surface);
+    border: 1.5px solid var(--line);
+    background: #fff;
     color: var(--ink);
-    padding: 13px 14px;
+    padding: 14px 16px;
     display: flex;
     align-items: center;
-    gap: 11px;
+    gap: 12px;
     text-align: left;
+    border-radius: 14px;
+    min-height: 52px;
+    transition: border-color .18s, background .18s;
   }
 
   .option[aria-pressed="true"] {
     border-color: var(--accent);
     background: var(--surface-soft);
-    font-weight: 800;
+    font-weight: 600;
   }
 
   .check-dot {
@@ -222,7 +234,7 @@
     height: 20px;
     flex: 0 0 20px;
     border-radius: 50%;
-    border: 2px solid var(--line);
+    border: 1.5px solid var(--line);
     display: grid;
     place-items: center;
   }
@@ -241,24 +253,25 @@
   }
 
   .helper {
-    margin-top: 12px;
+    margin-top: 14px;
     color: var(--muted);
     font-size: 13px;
+    text-align: center;
   }
 
   .nav-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 18px;
+    gap: 11px;
+    margin-top: 22px;
   }
 
   .nav-button {
     border: 1px solid var(--line);
-    background: var(--surface);
+    background: #fff;
     color: var(--muted);
     padding: 12px 14px;
-    font-weight: 800;
+    font-weight: 600;
   }
 
   .nav-button.primary {
@@ -267,72 +280,89 @@
     color: #fff;
   }
 
-  .nav-button:disabled {
-    opacity: .45;
-    cursor: default;
-  }
+  .nav-button:disabled { opacity: .4; cursor: default; }
 
   .result-head {
-    padding: 28px 0 10px;
+    padding: 34px 0 8px;
     text-align: center;
   }
 
   .result-label {
     color: var(--warm);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: .08em;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .26em;
   }
 
   .type-name {
-    margin-top: 8px;
-    font-size: 28px;
-    line-height: 1.35;
-    font-weight: 900;
+    margin-top: 12px;
+    font-size: 27px;
+    line-height: 1.45;
+    font-weight: 700;
   }
 
   .type-short {
-    margin-top: 10px;
+    margin-top: 12px;
     color: var(--accent);
     font-size: 15px;
-    font-weight: 800;
   }
 
   .block {
-    margin-top: 14px;
+    margin-top: 16px;
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 18px;
+    border-radius: 18px;
+    padding: 22px;
     box-shadow: var(--shadow);
   }
 
   .block h2 {
     color: var(--accent-deep);
-    font-size: 16px;
-    line-height: 1.45;
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .block h2::before {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: var(--warm);
+    flex: 0 0 auto;
   }
 
   .block p {
-    margin-top: 9px;
+    margin-top: 12px;
     color: var(--ink);
     font-size: 14px;
   }
 
   .steps {
     display: grid;
-    gap: 10px;
-    margin-top: 14px;
+    gap: 0;
+    margin-top: 8px;
   }
 
   .step {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 10px;
+    gap: 14px;
     align-items: start;
-    padding: 12px;
+    padding: 12px 0;
+    position: relative;
+  }
+
+  .step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 27px;
+    top: 44px;
+    bottom: -2px;
+    width: 2px;
     background: var(--surface-soft);
-    border-radius: 8px;
   }
 
   .step-mark {
@@ -340,126 +370,168 @@
     border-radius: 999px;
     background: var(--accent);
     color: #fff;
-    padding: 3px 8px;
+    padding: 5px 8px;
     text-align: center;
-    font-size: 12px;
-    font-weight: 800;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    z-index: 1;
   }
 
+  .step-body { padding-top: 6px; font-size: 14px; }
+
   .range-box {
-    margin-top: 12px;
-    padding: 14px;
-    border-radius: 8px;
+    margin-top: 6px;
+    padding: 16px;
+    border-radius: 14px;
     background: var(--surface-soft);
     text-align: center;
   }
 
   .range-number {
     color: var(--accent-deep);
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 1.2;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
   }
+
+  .range-box p { margin-top: 10px; color: var(--muted); font-size: 13px; }
 
   .disclaimer {
-    margin-top: 12px;
-    border: 1px dashed #c7d4cc;
-    border-radius: 8px;
-    padding: 12px;
-    color: var(--muted);
-    background: #fbfdfb;
-    font-size: 12px;
-  }
-
-  .menu-list,
-  .ticket-list,
-  .answer-list {
-    display: grid;
-    gap: 10px;
     margin-top: 14px;
+    border: 1px dashed #c7d4cc;
+    border-radius: 12px;
+    padding: 13px;
+    color: var(--muted);
+    background: #f7f4ec;
+    font-size: 12px;
+    line-height: 1.7;
   }
 
-  .menu-item,
-  .ticket-item,
-  .answer-item {
+  .menu-list, .ticket-list, .answer-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .menu-item, .ticket-item, .answer-item {
     border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 14px;
+    border-radius: 14px;
+    padding: 16px;
     background: #fff;
   }
 
-  .menu-top,
-  .ticket-top {
+  .menu-top, .ticket-top {
     display: flex;
     justify-content: space-between;
     gap: 12px;
     align-items: flex-start;
   }
 
-  .menu-name,
-  .ticket-name {
-    font-weight: 900;
-    line-height: 1.4;
+  .menu-name, .ticket-name {
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 15px;
   }
 
-  .price {
-    text-align: right;
-    white-space: nowrap;
+  .menu-item p {
+    margin-top: 9px;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.75;
   }
+
+  .price { text-align: right; white-space: nowrap; }
 
   .badge {
     display: inline-block;
     margin-bottom: 5px;
-    border-radius: 999px;
+    border-radius: 6px;
     background: var(--warm);
     color: #fff;
-    padding: 2px 8px;
-    font-size: 11px;
-    font-weight: 900;
+    padding: 2px 7px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .04em;
   }
 
-  .was {
+  .was { color: var(--muted); font-size: 11px; text-decoration: line-through; }
+
+  .now { color: var(--accent-deep); font-size: 18px; font-weight: 700; }
+
+  .menu-item .now, .ticket-item .now { color: var(--warm); }
+
+  .price-label, .ticket-note { color: var(--muted); font-size: 11px; }
+
+  .ticket-item.highlight { border-color: var(--accent); background: var(--surface-soft); }
+
+  .answer-label { color: var(--muted); font-size: 12px; }
+
+  .answer-value { margin-top: 4px; font-weight: 600; }
+
+  /* FAQ accordion */
+  .faq-list { margin-top: 14px; display: grid; gap: 10px; }
+
+  .faq-item {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .faq-q {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    padding: 15px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    line-height: 1.5;
+  }
+
+  .faq-icon {
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: transform .25s ease;
+  }
+
+  .faq-icon::before, .faq-icon::after {
+    content: "";
+    position: absolute;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+
+  .faq-icon::before { top: 9px; left: 3px; right: 3px; height: 2px; }
+  .faq-icon::after { left: 9px; top: 3px; bottom: 3px; width: 2px; }
+
+  .faq-item[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+  }
+
+  .faq-a-inner {
+    padding: 0 16px 16px;
+    font-size: 13px;
     color: var(--muted);
-    font-size: 12px;
-    text-decoration: line-through;
-  }
-
-  .now {
-    color: var(--accent-deep);
-    font-size: 18px;
-    font-weight: 900;
-  }
-
-  .price-label,
-  .ticket-note {
-    color: var(--muted);
-    font-size: 12px;
-  }
-
-  .ticket-item.highlight {
-    border-color: var(--accent);
-    background: var(--surface-soft);
-  }
-
-  .answer-label {
-    color: var(--muted);
-    font-size: 12px;
-    font-weight: 800;
-  }
-
-  .answer-value {
-    margin-top: 3px;
-    font-weight: 800;
+    line-height: 1.85;
   }
 
   @media (min-width: 520px) {
-    .shell {
-      padding-inline: 22px;
-    }
-
-    .hero {
-      padding-top: 48px;
-    }
+    .shell { padding-inline: 24px; }
+    .hero { padding-top: 64px; }
   }
 </style>
 </head>
@@ -585,12 +657,13 @@
     sourceLabel.textContent = source.intro.eyebrow;
     app.innerHTML = `
       <section class="hero">
+        <img class="brand-logo" src="logo.png" alt="Re.整骨院">
         <p class="eyebrow">${escapeHtml(source.intro.eyebrow)}</p>
         <h1>${escapeHtml(source.intro.headline)}</h1>
         <p class="lead">${escapeHtml(source.intro.lead)}</p>
-        <p class="note">${escapeHtml(source.intro.note)}</p>
+        <div class="ornament"></div>
         <button class="primary-action" type="button" id="startButton">${escapeHtml(startText)}</button>
-        <p class="helper">${escapeHtml(text.questionPrefix)} ${escapeHtml(totalQuestions)}</p>
+        <p class="note">${escapeHtml(source.intro.note)}</p>
       </section>
     `;
     document.getElementById("startButton").addEventListener("click", () => {
@@ -718,6 +791,40 @@
     }).join("");
   };
 
+  const renderFaq = () => {
+    if (!Array.isArray(state.data.faq) || state.data.faq.length === 0) return "";
+    const text = state.data.uiText;
+    const title = state.data.faqTitle || "よくあるご質問";
+    return `
+      <section class="block">
+        <h2>${escapeHtml(title)}</h2>
+        <div class="faq-list">
+          ${state.data.faq.map((item, index) => `
+            <div class="faq-item" data-faq="${index}" aria-expanded="false">
+              <button class="faq-q" type="button">
+                <span>${escapeHtml(item.q)}</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-a"><div class="faq-a-inner">${escapeHtml(item.a)}</div></div>
+            </div>
+          `).join("")}
+        </div>
+      </section>
+    `;
+  };
+
+  const bindFaq = () => {
+    app.querySelectorAll(".faq-item").forEach((item) => {
+      const button = item.querySelector(".faq-q");
+      const answer = item.querySelector(".faq-a");
+      button.addEventListener("click", () => {
+        const open = item.getAttribute("aria-expanded") === "true";
+        item.setAttribute("aria-expanded", open ? "false" : "true");
+        answer.style.maxHeight = open ? "0px" : `${answer.scrollHeight}px`;
+      });
+    });
+  };
+
   const renderDiagnosisResult = () => {
     const text = state.data.uiText;
     const type = state.data.types[diagnose()];
@@ -727,6 +834,7 @@
     sourceLabel.textContent = state.data.sources[state.source].intro.eyebrow;
     app.innerHTML = `
       <section class="result-head">
+        <img class="brand-logo small" src="logo.png" alt="Re.整骨院">
         <p class="result-label">${escapeHtml(text.resultLabel)}</p>
         <h1 class="type-name">${escapeHtml(type.name)}</h1>
         <p class="type-short">${escapeHtml(type.shortText)}</p>
@@ -748,7 +856,7 @@
           ${type.roadmap.map((step, index) => `
             <div class="step">
               <div class="step-mark">${escapeHtml(text.stepPrefix)} ${escapeHtml(index + 1)}</div>
-              <div>${escapeHtml(step)}</div>
+              <div class="step-body">${escapeHtml(step)}</div>
             </div>
           `).join("")}
         </div>
@@ -779,9 +887,12 @@
         <div class="disclaimer">${escapeHtml(text.ticketNotice)}</div>
       </section>
 
-      <button class="primary-action" type="button" id="reserveButton">${escapeHtml(text.reservationButton || state.data.reservation.buttonText)}</button>
+      ${renderFaq()}
+
+      <button class="primary-action" type="button" id="reserveButton">${escapeHtml(state.data.reservation.buttonText)}</button>
       <button class="secondary-action" type="button" id="restartButton">${escapeHtml(text.restart)}</button>
     `;
+    bindFaq();
     bindResultButtons();
   };
 
@@ -801,6 +912,7 @@
     sourceLabel.textContent = state.data.sources[state.source].intro.eyebrow;
     app.innerHTML = `
       <section class="result-head">
+        <img class="brand-logo small" src="logo.png" alt="Re.整骨院">
         <p class="result-label">${escapeHtml(text.simpleResultLabel)}</p>
         <h1 class="type-name">${escapeHtml(text.simpleNextTitle)}</h1>
         <p class="type-short">${escapeHtml(text.simpleNextText)}</p>
@@ -824,9 +936,12 @@
         <div class="disclaimer">${escapeHtml(state.data.disclaimer)}</div>
       </section>
 
+      ${renderFaq()}
+
       <button class="primary-action" type="button" id="reserveButton">${escapeHtml(state.data.reservation.buttonText)}</button>
       <button class="secondary-action" type="button" id="restartButton">${escapeHtml(text.restart)}</button>
     `;
+    bindFaq();
     bindResultButtons();
   };
 
